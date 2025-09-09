@@ -1,0 +1,6 @@
+version: "Apple Swift version 6.1.2 (swiftlang-6.1.2.1.2 clang-1700.0.13.5)"
+options: "dc254ebc494d52a5c73824d36cfb2b092f29d7fef1654cf360cea944e9361c6d"
+build_start_time: [1757186569, 412834000]
+build_end_time: [1757186570, 250623000]
+inputs:
+  "/Users/alex/Developer/roblox-account-manager/RobloxMultiCLI/Sources/RobloxMultiCLI/main.swift": [1757186561, 118659618]

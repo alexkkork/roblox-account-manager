@@ -1,0 +1,12 @@
+{
+  "": {
+    "dependencies": "/Users/alex/Developer/roblox-account-manager/RobloxMultiCLI/.build/arm64-apple-macosx/release/RobloxMultiCLI.build/RobloxMultiCLI.d",
+    "object": "/Users/alex/Developer/roblox-account-manager/RobloxMultiCLI/.build/arm64-apple-macosx/release/RobloxMultiCLI.build/RobloxMultiCLI.o",
+    "swift-dependencies": "/Users/alex/Developer/roblox-account-manager/RobloxMultiCLI/.build/arm64-apple-macosx/release/RobloxMultiCLI.build/master.swiftdeps"
+  },
+  "/Users/alex/Developer/roblox-account-manager/RobloxMultiCLI/Sources/RobloxMultiCLI/main.swift": {
+    "object": "/Users/alex/Developer/roblox-account-manager/RobloxMultiCLI/.build/arm64-apple-macosx/release/RobloxMultiCLI.build/main.swift.o",
+    "swiftmodule": "/Users/alex/Developer/roblox-account-manager/RobloxMultiCLI/.build/arm64-apple-macosx/release/RobloxMultiCLI.build/main~partial.swiftmodule",
+    "swift-dependencies": "/Users/alex/Developer/roblox-account-manager/RobloxMultiCLI/.build/arm64-apple-macosx/release/RobloxMultiCLI.build/main.swiftdeps"
+  }
+}

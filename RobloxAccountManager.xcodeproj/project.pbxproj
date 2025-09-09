@@ -1,0 +1,555 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 63;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		04700DC136A25D847FBFDB1E /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 079CA4322B5E736122A4C44D /* Info.plist */; };
+		1A7C87D4A926D645B4ED5AB2 /* AccountManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4216FFF976ECA8B0979DF370 /* AccountManager.swift */; };
+		2454DAF308045539CCDF30BC /* BehaviorSettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31EFBA043FA841EDAB2F9C62 /* BehaviorSettingsView.swift */; };
+		27B6DC6AE809D2BA6F2DE732 /* StatisticsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC7D137C9638C9636C70F024 /* StatisticsView.swift */; };
+		391B51C28A14D7D034D48762 /* Game.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21D934E73BB6E7155B00C6BF /* Game.swift */; };
+		3D5CEFB0362EDE5F884793D9 /* RobloxAccountManagerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD8B9D769B8438FF8AE9BB2A /* RobloxAccountManagerApp.swift */; };
+		44DE08A3AFB934C60AD12065 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C62AB33AD76117E546E4CE21 /* Assets.xcassets */; };
+		4B129549B99FD1956EA73291 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1366B1FC20A442C0CD15B022 /* SettingsView.swift */; };
+		4FC5D428538BF1F0DD86CAE2 /* GameFiltersView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0E796025670AB7B3AC87EFF /* GameFiltersView.swift */; };
+		5118AB97DA3D84E618BAA8E6 /* CookieInstructionsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 965FB54D4D823E739D5637FC /* CookieInstructionsView.swift */; };
+		525D9BA5CEEB601A7C8F31B4 /* MultiLauncher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 744D87F3FA47DEC97D03060F /* MultiLauncher.swift */; };
+		5525AC054BA8BE628E8A8AF5 /* GamePickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE868A272A60DD8CACC8BFF9 /* GamePickerView.swift */; };
+		78B5440021F2D4D9B9C524A2 /* DetailedStatisticsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28E25C68B48AE4056565FAAF /* DetailedStatisticsView.swift */; };
+		79F3CDD65C974907FF910D06 /* FirstTimeSetupView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECE9D3822162573142340C3B /* FirstTimeSetupView.swift */; };
+		7AA1667436D3F84EBEC33F99 /* AdvancedSettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74A1DC87F98F408784020222 /* AdvancedSettingsView.swift */; };
+		7C5D3F9CC74936DE0DADE4E5 /* Account.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E5F75FB06F05410DE538692 /* Account.swift */; };
+		91B36F574115FA15BACA3FB7 /* AccountDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42223136A889A45D2314DB43 /* AccountDetailView.swift */; };
+		9360D217EC4E154F085DAB87 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01DE48CA70B92F6A20F1E5E7 /* ContentView.swift */; };
+		A43780B5E529F517C393A0BA /* GameDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B96A480FF373BC51D7BCF18A /* GameDetailView.swift */; };
+		AA48491236717AB6B0C95F92 /* RobloxAPIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E548E92DF821977E01C24E5 /* RobloxAPIService.swift */; };
+		B1C2D3E4F5A69788B9C0D1E3 /* GroupManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1C2D3E4F5A69788B9C0D1E2 /* GroupManager.swift */; };
+		B2C3D4E5F6A79889B0C1D2E4 /* AccountGroup.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2C3D4E5F6A79889B0C1D2E3 /* AccountGroup.swift */; };
+		B38EC586255C166D9E355B4F /* JoinURLBuilderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 553B8FC965C1169B92FE856C /* JoinURLBuilderView.swift */; };
+		B3C4D5E6F7A8099AB0C1D2E4 /* GroupsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3C4D5E6F7A8099AB0C1D2E3 /* GroupsView.swift */; };
+		C4222282AF235EDD5ECD85C2 /* AppearanceSettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78A0937B997D704541AA9711 /* AppearanceSettingsView.swift */; };
+		CAF487B47364EE66455CBF90 /* AccountsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2587F3D7923430383946AE1 /* AccountsView.swift */; };
+		CFF4367A28DB0D1B04C18335 /* LauncherView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4B6A14CFCBC4B303AFB09FD /* LauncherView.swift */; };
+		D2BD5AE4478B62E598F1CE56 /* AudioSettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA9930A672613B307E343D23 /* AudioSettingsView.swift */; };
+		D3B2A466F6535431A05A9828 /* Settings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 643FFA9A29606DB9A29F100D /* Settings.swift */; };
+		D56B7D06EF23340EDD511E86 /* SecuritySettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46121B6DFC49DF4052A355E5 /* SecuritySettingsView.swift */; };
+		DD4FCA5E5967F28116DE3449 /* SecureStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54B38E591414EDCD761722DC /* SecureStorage.swift */; };
+		DE187C7A7C3DC62F707E2187 /* LaunchSettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD21949F9A8355C1816237EF /* LaunchSettingsView.swift */; };
+		E0F61D6A965D17749AADAC3A /* AddAccountView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8D5E17F95BC40C48D76DFD2 /* AddAccountView.swift */; };
+		E8690247DF3E45CA30493126 /* SettingsGroup.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62BE4F32F3AE86EFE07B7FE3 /* SettingsGroup.swift */; };
+		F1EFCC1B252FBEE77AE7B5B2 /* SettingsManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE3724C259809E254C0316A9 /* SettingsManager.swift */; };
+		FAF8CFB6D312AB9AF6E1101A /* GameManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3ECC7F39D276210EC35F8A0 /* GameManager.swift */; };
+		FBC612A5C5EAB9983893528E /* GamesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A099B030CB35385970CA481 /* GamesView.swift */; };
+		FEF114D381F162469ECE01E2 /* BulkLaunchSettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E8CC2A561625DD0EFDEE082 /* BulkLaunchSettingsView.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		01DE48CA70B92F6A20F1E5E7 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		079CA4322B5E736122A4C44D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		1366B1FC20A442C0CD15B022 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+		21D934E73BB6E7155B00C6BF /* Game.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Game.swift; sourceTree = "<group>"; };
+		28E25C68B48AE4056565FAAF /* DetailedStatisticsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailedStatisticsView.swift; sourceTree = "<group>"; };
+		2E8CC2A561625DD0EFDEE082 /* BulkLaunchSettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BulkLaunchSettingsView.swift; sourceTree = "<group>"; };
+		31EFBA043FA841EDAB2F9C62 /* BehaviorSettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BehaviorSettingsView.swift; sourceTree = "<group>"; };
+		4216FFF976ECA8B0979DF370 /* AccountManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountManager.swift; sourceTree = "<group>"; };
+		42223136A889A45D2314DB43 /* AccountDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountDetailView.swift; sourceTree = "<group>"; };
+		46121B6DFC49DF4052A355E5 /* SecuritySettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecuritySettingsView.swift; sourceTree = "<group>"; };
+		54B38E591414EDCD761722DC /* SecureStorage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecureStorage.swift; sourceTree = "<group>"; };
+		553B8FC965C1169B92FE856C /* JoinURLBuilderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JoinURLBuilderView.swift; sourceTree = "<group>"; };
+		5E548E92DF821977E01C24E5 /* RobloxAPIService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RobloxAPIService.swift; sourceTree = "<group>"; };
+		62BE4F32F3AE86EFE07B7FE3 /* SettingsGroup.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsGroup.swift; sourceTree = "<group>"; };
+		643FFA9A29606DB9A29F100D /* Settings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Settings.swift; sourceTree = "<group>"; };
+		744D87F3FA47DEC97D03060F /* MultiLauncher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MultiLauncher.swift; sourceTree = "<group>"; };
+		74A1DC87F98F408784020222 /* AdvancedSettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdvancedSettingsView.swift; sourceTree = "<group>"; };
+		78A0937B997D704541AA9711 /* AppearanceSettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppearanceSettingsView.swift; sourceTree = "<group>"; };
+		8A099B030CB35385970CA481 /* GamesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GamesView.swift; sourceTree = "<group>"; };
+		8E5F75FB06F05410DE538692 /* Account.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Account.swift; sourceTree = "<group>"; };
+		965FB54D4D823E739D5637FC /* CookieInstructionsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CookieInstructionsView.swift; sourceTree = "<group>"; };
+		A0E796025670AB7B3AC87EFF /* GameFiltersView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameFiltersView.swift; sourceTree = "<group>"; };
+		A1C2D3E4F5A69788B9C0D1E2 /* GroupManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroupManager.swift; sourceTree = "<group>"; };
+		A2C3D4E5F6A79889B0C1D2E3 /* AccountGroup.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountGroup.swift; sourceTree = "<group>"; };
+		A3C4D5E6F7A8099AB0C1D2E3 /* GroupsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroupsView.swift; sourceTree = "<group>"; };
+		B4B6A14CFCBC4B303AFB09FD /* LauncherView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LauncherView.swift; sourceTree = "<group>"; };
+		B96A480FF373BC51D7BCF18A /* GameDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameDetailView.swift; sourceTree = "<group>"; };
+		BA9930A672613B307E343D23 /* AudioSettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioSettingsView.swift; sourceTree = "<group>"; };
+		BC7D137C9638C9636C70F024 /* StatisticsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatisticsView.swift; sourceTree = "<group>"; };
+		C62AB33AD76117E546E4CE21 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		CD21949F9A8355C1816237EF /* LaunchSettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchSettingsView.swift; sourceTree = "<group>"; };
+		CD8B9D769B8438FF8AE9BB2A /* RobloxAccountManagerApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RobloxAccountManagerApp.swift; sourceTree = "<group>"; };
+		CE868A272A60DD8CACC8BFF9 /* GamePickerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GamePickerView.swift; sourceTree = "<group>"; };
+		D3ECC7F39D276210EC35F8A0 /* GameManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameManager.swift; sourceTree = "<group>"; };
+		DE3724C259809E254C0316A9 /* SettingsManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsManager.swift; sourceTree = "<group>"; };
+		E2587F3D7923430383946AE1 /* AccountsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountsView.swift; sourceTree = "<group>"; };
+		ECE9D3822162573142340C3B /* FirstTimeSetupView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstTimeSetupView.swift; sourceTree = "<group>"; };
+		F1B41E7394DF302684135BAE /* RobloxAccountManager.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RobloxAccountManager.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F8D5E17F95BC40C48D76DFD2 /* AddAccountView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddAccountView.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXGroup section */
+		1A022BB3F71C1888EB577607 /* Auth */ = {
+			isa = PBXGroup;
+			children = (
+				965FB54D4D823E739D5637FC /* CookieInstructionsView.swift */,
+				ECE9D3822162573142340C3B /* FirstTimeSetupView.swift */,
+			);
+			path = Auth;
+			sourceTree = "<group>";
+		};
+		538FF69851AA7FBC9634B876 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				01DE48CA70B92F6A20F1E5E7 /* ContentView.swift */,
+				5B485BFC589F3EE9B001B4C4 /* Accounts */,
+				1A022BB3F71C1888EB577607 /* Auth */,
+				EF738C8A1E0D6340A8FDCBF9 /* Games */,
+				826FD6CD1A31E86FBC3BF7E8 /* Launcher */,
+				5FE7BA440780CD80516FCE0D /* Settings */,
+				8D1241F9D5FC07AE6BABC2AC /* Statistics */,
+				A4C5D6E7F8A9010AB2C3D4E5 /* Groups */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		5B485BFC589F3EE9B001B4C4 /* Accounts */ = {
+			isa = PBXGroup;
+			children = (
+				42223136A889A45D2314DB43 /* AccountDetailView.swift */,
+				E2587F3D7923430383946AE1 /* AccountsView.swift */,
+				F8D5E17F95BC40C48D76DFD2 /* AddAccountView.swift */,
+				CD21949F9A8355C1816237EF /* LaunchSettingsView.swift */,
+			);
+			path = Accounts;
+			sourceTree = "<group>";
+		};
+		5FE7BA440780CD80516FCE0D /* Settings */ = {
+			isa = PBXGroup;
+			children = (
+				74A1DC87F98F408784020222 /* AdvancedSettingsView.swift */,
+				78A0937B997D704541AA9711 /* AppearanceSettingsView.swift */,
+				BA9930A672613B307E343D23 /* AudioSettingsView.swift */,
+				31EFBA043FA841EDAB2F9C62 /* BehaviorSettingsView.swift */,
+				46121B6DFC49DF4052A355E5 /* SecuritySettingsView.swift */,
+				62BE4F32F3AE86EFE07B7FE3 /* SettingsGroup.swift */,
+				1366B1FC20A442C0CD15B022 /* SettingsView.swift */,
+			);
+			path = Settings;
+			sourceTree = "<group>";
+		};
+		76D23170047E2D95C53C2961 /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				CD8B9D769B8438FF8AE9BB2A /* RobloxAccountManagerApp.swift */,
+				81A5CD50B184664D850ACE17 /* Managers */,
+				85FE8C352657BB9051326B12 /* Models */,
+				D72BA1CC5F74E090C42DBDDE /* Services */,
+				538FF69851AA7FBC9634B876 /* Views */,
+			);
+			path = Sources;
+			sourceTree = "<group>";
+		};
+		81A5CD50B184664D850ACE17 /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+				4216FFF976ECA8B0979DF370 /* AccountManager.swift */,
+				D3ECC7F39D276210EC35F8A0 /* GameManager.swift */,
+				DE3724C259809E254C0316A9 /* SettingsManager.swift */,
+				A1C2D3E4F5A69788B9C0D1E2 /* GroupManager.swift */,
+			);
+			path = Managers;
+			sourceTree = "<group>";
+		};
+		826FD6CD1A31E86FBC3BF7E8 /* Launcher */ = {
+			isa = PBXGroup;
+			children = (
+				2E8CC2A561625DD0EFDEE082 /* BulkLaunchSettingsView.swift */,
+				CE868A272A60DD8CACC8BFF9 /* GamePickerView.swift */,
+				B4B6A14CFCBC4B303AFB09FD /* LauncherView.swift */,
+			);
+			path = Launcher;
+			sourceTree = "<group>";
+		};
+		85FE8C352657BB9051326B12 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				8E5F75FB06F05410DE538692 /* Account.swift */,
+				21D934E73BB6E7155B00C6BF /* Game.swift */,
+				643FFA9A29606DB9A29F100D /* Settings.swift */,
+				A2C3D4E5F6A79889B0C1D2E3 /* AccountGroup.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		8D1241F9D5FC07AE6BABC2AC /* Statistics */ = {
+			isa = PBXGroup;
+			children = (
+				28E25C68B48AE4056565FAAF /* DetailedStatisticsView.swift */,
+				BC7D137C9638C9636C70F024 /* StatisticsView.swift */,
+			);
+			path = Statistics;
+			sourceTree = "<group>";
+		};
+		A4C5D6E7F8A9010AB2C3D4E5 /* Groups */ = {
+			isa = PBXGroup;
+			children = (
+				A3C4D5E6F7A8099AB0C1D2E3 /* GroupsView.swift */,
+			);
+			path = Groups;
+			sourceTree = "<group>";
+		};
+		A8520DEA4A311A45328659CB /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				079CA4322B5E736122A4C44D /* Info.plist */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		D72BA1CC5F74E090C42DBDDE /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				744D87F3FA47DEC97D03060F /* MultiLauncher.swift */,
+				5E548E92DF821977E01C24E5 /* RobloxAPIService.swift */,
+				54B38E591414EDCD761722DC /* SecureStorage.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		DD7DCF243D38C40E6949347F = {
+			isa = PBXGroup;
+			children = (
+				C62AB33AD76117E546E4CE21 /* Assets.xcassets */,
+				A8520DEA4A311A45328659CB /* Resources */,
+				76D23170047E2D95C53C2961 /* Sources */,
+				FBEB5A8C147F88D5D8D61B9D /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		EF738C8A1E0D6340A8FDCBF9 /* Games */ = {
+			isa = PBXGroup;
+			children = (
+				B96A480FF373BC51D7BCF18A /* GameDetailView.swift */,
+				A0E796025670AB7B3AC87EFF /* GameFiltersView.swift */,
+				8A099B030CB35385970CA481 /* GamesView.swift */,
+				553B8FC965C1169B92FE856C /* JoinURLBuilderView.swift */,
+			);
+			path = Games;
+			sourceTree = "<group>";
+		};
+		FBEB5A8C147F88D5D8D61B9D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F1B41E7394DF302684135BAE /* RobloxAccountManager.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		297197D672DD356919282BC8 /* RobloxAccountManager */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9612BFC8205A97026B75FA53 /* Build configuration list for PBXNativeTarget "RobloxAccountManager" */;
+			buildPhases = (
+				E239A7886B337B40B7B5EE22 /* Sources */,
+				631BDEBF7B6E876E0C562EE4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = RobloxAccountManager;
+			packageProductDependencies = (
+			);
+			productName = RobloxAccountManager;
+			productReference = F1B41E7394DF302684135BAE /* RobloxAccountManager.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		78EE86D8CD58C2F5F26135E7 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = YES;
+				LastUpgradeCheck = 1500;
+				TargetAttributes = {
+					297197D672DD356919282BC8 = {
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 972F540C707BC85F56663361 /* Build configuration list for PBXProject "RobloxAccountManager" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				Base,
+				en,
+			);
+			mainGroup = DD7DCF243D38C40E6949347F;
+			minimizedProjectReferenceProxies = 1;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				297197D672DD356919282BC8 /* RobloxAccountManager */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		631BDEBF7B6E876E0C562EE4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				44DE08A3AFB934C60AD12065 /* Assets.xcassets in Resources */,
+				04700DC136A25D847FBFDB1E /* Info.plist in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		E239A7886B337B40B7B5EE22 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7C5D3F9CC74936DE0DADE4E5 /* Account.swift in Sources */,
+				91B36F574115FA15BACA3FB7 /* AccountDetailView.swift in Sources */,
+				1A7C87D4A926D645B4ED5AB2 /* AccountManager.swift in Sources */,
+				CAF487B47364EE66455CBF90 /* AccountsView.swift in Sources */,
+				E0F61D6A965D17749AADAC3A /* AddAccountView.swift in Sources */,
+				7AA1667436D3F84EBEC33F99 /* AdvancedSettingsView.swift in Sources */,
+				C4222282AF235EDD5ECD85C2 /* AppearanceSettingsView.swift in Sources */,
+				D2BD5AE4478B62E598F1CE56 /* AudioSettingsView.swift in Sources */,
+				2454DAF308045539CCDF30BC /* BehaviorSettingsView.swift in Sources */,
+				FEF114D381F162469ECE01E2 /* BulkLaunchSettingsView.swift in Sources */,
+				9360D217EC4E154F085DAB87 /* ContentView.swift in Sources */,
+				5118AB97DA3D84E618BAA8E6 /* CookieInstructionsView.swift in Sources */,
+				78B5440021F2D4D9B9C524A2 /* DetailedStatisticsView.swift in Sources */,
+				79F3CDD65C974907FF910D06 /* FirstTimeSetupView.swift in Sources */,
+				391B51C28A14D7D034D48762 /* Game.swift in Sources */,
+				A43780B5E529F517C393A0BA /* GameDetailView.swift in Sources */,
+				4FC5D428538BF1F0DD86CAE2 /* GameFiltersView.swift in Sources */,
+				FAF8CFB6D312AB9AF6E1101A /* GameManager.swift in Sources */,
+				5525AC054BA8BE628E8A8AF5 /* GamePickerView.swift in Sources */,
+				FBC612A5C5EAB9983893528E /* GamesView.swift in Sources */,
+				B38EC586255C166D9E355B4F /* JoinURLBuilderView.swift in Sources */,
+				DE187C7A7C3DC62F707E2187 /* LaunchSettingsView.swift in Sources */,
+				CFF4367A28DB0D1B04C18335 /* LauncherView.swift in Sources */,
+				525D9BA5CEEB601A7C8F31B4 /* MultiLauncher.swift in Sources */,
+				AA48491236717AB6B0C95F92 /* RobloxAPIService.swift in Sources */,
+				3D5CEFB0362EDE5F884793D9 /* RobloxAccountManagerApp.swift in Sources */,
+				DD4FCA5E5967F28116DE3449 /* SecureStorage.swift in Sources */,
+				D56B7D06EF23340EDD511E86 /* SecuritySettingsView.swift in Sources */,
+				D3B2A466F6535431A05A9828 /* Settings.swift in Sources */,
+				E8690247DF3E45CA30493126 /* SettingsGroup.swift in Sources */,
+				F1EFCC1B252FBEE77AE7B5B2 /* SettingsManager.swift in Sources */,
+				4B129549B99FD1956EA73291 /* SettingsView.swift in Sources */,
+				27B6DC6AE809D2BA6F2DE732 /* StatisticsView.swift in Sources */,
+				B2C3D4E5F6A79889B0C1D2E4 /* AccountGroup.swift in Sources */,
+				B1C2D3E4F5A69788B9C0D1E3 /* GroupManager.swift in Sources */,
+				B3C4D5E6F7A8099AB0C1D2E4 /* GroupsView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		48EFA03A7203F7FEA2AF59D1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "-";
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = 6F7947MW2B;
+				INFOPLIST_FILE = Resources/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.robloxmanager.RobloxAccountManager.v2;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		AEABA7BD2980787A0019D4E4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEVELOPMENT_TEAM = "";
+				ENABLE_DOWNLOADS_FOLDER = readwrite;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SELECTED_FILES = readwrite;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(inherited)",
+					"DEBUG=1",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 13.0;
+				MARKETING_VERSION = 1.0.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.9;
+			};
+			name = Debug;
+		};
+		C8541121469FE6950D85E17D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = "";
+				ENABLE_DOWNLOADS_FOLDER = readwrite;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SELECTED_FILES = readwrite;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 13.0;
+				MARKETING_VERSION = 1.0.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.9;
+			};
+			name = Release;
+		};
+		E9A60992337291208C77A59F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "-";
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = 6F7947MW2B;
+				INFOPLIST_FILE = Resources/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.robloxmanager.RobloxAccountManager.v2;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		9612BFC8205A97026B75FA53 /* Build configuration list for PBXNativeTarget "RobloxAccountManager" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E9A60992337291208C77A59F /* Debug */,
+				48EFA03A7203F7FEA2AF59D1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		972F540C707BC85F56663361 /* Build configuration list for PBXProject "RobloxAccountManager" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AEABA7BD2980787A0019D4E4 /* Debug */,
+				C8541121469FE6950D85E17D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 78EE86D8CD58C2F5F26135E7 /* Project object */;
+}

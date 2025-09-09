@@ -1,0 +1,230 @@
+{
+  "builtTestProducts" : [
+
+  ],
+  "copyCommands" : {
+
+  },
+  "explicitTargetDependencyImportCheckingMode" : {
+    "none" : {
+
+    }
+  },
+  "generatedSourceTargetSet" : [
+
+  ],
+  "pluginDescriptions" : [
+
+  ],
+  "swiftCommands" : {
+    "C.RobloxMultiCLI-arm64-apple-macosx15.0-release.module" : {
+      "executable" : "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc",
+      "fileList" : "/Users/alex/Developer/roblox-account-manager/RobloxMultiCLI/.build/arm64-apple-macosx/release/RobloxMultiCLI.build/sources",
+      "importPath" : "/Users/alex/Developer/roblox-account-manager/RobloxMultiCLI/.build/arm64-apple-macosx/release/Modules",
+      "inputs" : [
+        {
+          "kind" : "file",
+          "name" : "/Users/alex/Developer/roblox-account-manager/RobloxMultiCLI/Sources/RobloxMultiCLI/main.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/alex/Developer/roblox-account-manager/RobloxMultiCLI/.build/arm64-apple-macosx/release/swift-version--58304C5D6DBC2206.txt"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/alex/Developer/roblox-account-manager/RobloxMultiCLI/.build/arm64-apple-macosx/release/RobloxMultiCLI.build/sources"
+        }
+      ],
+      "isLibrary" : false,
+      "moduleName" : "RobloxMultiCLI",
+      "moduleOutputPath" : "/Users/alex/Developer/roblox-account-manager/RobloxMultiCLI/.build/arm64-apple-macosx/release/Modules/RobloxMultiCLI.swiftmodule",
+      "objects" : [
+        "/Users/alex/Developer/roblox-account-manager/RobloxMultiCLI/.build/arm64-apple-macosx/release/RobloxMultiCLI.build/main.swift.o"
+      ],
+      "otherArguments" : [
+        "-target",
+        "arm64-apple-macosx13.0",
+        "-O",
+        "-j10",
+        "-DSWIFT_PACKAGE",
+        "-module-cache-path",
+        "/Users/alex/Developer/roblox-account-manager/RobloxMultiCLI/.build/arm64-apple-macosx/release/ModuleCache",
+        "-parseable-output",
+        "-Xfrontend",
+        "-entry-point-function-name",
+        "-Xfrontend",
+        "RobloxMultiCLI_main",
+        "-swift-version",
+        "5",
+        "-sdk",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.5.sdk",
+        "-F",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks",
+        "-F",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/PrivateFrameworks",
+        "-I",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib",
+        "-L",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib",
+        "-g",
+        "-Xcc",
+        "-isysroot",
+        "-Xcc",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.5.sdk",
+        "-Xcc",
+        "-F",
+        "-Xcc",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks",
+        "-Xcc",
+        "-F",
+        "-Xcc",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/PrivateFrameworks",
+        "-Xcc",
+        "-fPIC",
+        "-Xcc",
+        "-g",
+        "-package-name",
+        "robloxmulticli"
+      ],
+      "outputFileMapPath" : "/Users/alex/Developer/roblox-account-manager/RobloxMultiCLI/.build/arm64-apple-macosx/release/RobloxMultiCLI.build/output-file-map.json",
+      "outputs" : [
+        {
+          "kind" : "file",
+          "name" : "/Users/alex/Developer/roblox-account-manager/RobloxMultiCLI/.build/arm64-apple-macosx/release/RobloxMultiCLI.build/main.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/alex/Developer/roblox-account-manager/RobloxMultiCLI/.build/arm64-apple-macosx/release/Modules/RobloxMultiCLI.swiftmodule"
+        }
+      ],
+      "prepareForIndexing" : false,
+      "sources" : [
+        "/Users/alex/Developer/roblox-account-manager/RobloxMultiCLI/Sources/RobloxMultiCLI/main.swift"
+      ],
+      "tempsPath" : "/Users/alex/Developer/roblox-account-manager/RobloxMultiCLI/.build/arm64-apple-macosx/release/RobloxMultiCLI.build",
+      "wholeModuleOptimization" : true
+    }
+  },
+  "swiftFrontendCommands" : {
+
+  },
+  "swiftTargetScanArgs" : {
+    "RobloxMultiCLI" : [
+      "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc",
+      "-module-name",
+      "RobloxMultiCLI",
+      "-package-name",
+      "robloxmulticli",
+      "-whole-module-optimization",
+      "-num-threads",
+      "10",
+      "-c",
+      "/Users/alex/Developer/roblox-account-manager/RobloxMultiCLI/Sources/RobloxMultiCLI/main.swift",
+      "-I",
+      "/Users/alex/Developer/roblox-account-manager/RobloxMultiCLI/.build/arm64-apple-macosx/release/Modules",
+      "-target",
+      "arm64-apple-macosx13.0",
+      "-O",
+      "-j10",
+      "-DSWIFT_PACKAGE",
+      "-module-cache-path",
+      "/Users/alex/Developer/roblox-account-manager/RobloxMultiCLI/.build/arm64-apple-macosx/release/ModuleCache",
+      "-parseable-output",
+      "-Xfrontend",
+      "-entry-point-function-name",
+      "-Xfrontend",
+      "RobloxMultiCLI_main",
+      "-swift-version",
+      "5",
+      "-sdk",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.5.sdk",
+      "-F",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks",
+      "-F",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/PrivateFrameworks",
+      "-I",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib",
+      "-L",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib",
+      "-g",
+      "-Xcc",
+      "-isysroot",
+      "-Xcc",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.5.sdk",
+      "-Xcc",
+      "-F",
+      "-Xcc",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks",
+      "-Xcc",
+      "-F",
+      "-Xcc",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/PrivateFrameworks",
+      "-Xcc",
+      "-fPIC",
+      "-Xcc",
+      "-g",
+      "-package-name",
+      "robloxmulticli",
+      "-driver-use-frontend-path",
+      "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc"
+    ]
+  },
+  "targetDependencyMap" : {
+    "RobloxMultiCLI" : [
+
+    ]
+  },
+  "testDiscoveryCommands" : {
+
+  },
+  "testEntryPointCommands" : {
+
+  },
+  "traitConfiguration" : {
+    "enableAllTraits" : false
+  },
+  "writeCommands" : {
+    "/Users/alex/Developer/roblox-account-manager/RobloxMultiCLI/.build/arm64-apple-macosx/release/RobloxMultiCLI.build/sources" : {
+      "alwaysOutOfDate" : false,
+      "inputs" : [
+        {
+          "kind" : "virtual",
+          "name" : "<sources-file-list>"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/alex/Developer/roblox-account-manager/RobloxMultiCLI/Sources/RobloxMultiCLI/main.swift"
+        }
+      ],
+      "outputFilePath" : "/Users/alex/Developer/roblox-account-manager/RobloxMultiCLI/.build/arm64-apple-macosx/release/RobloxMultiCLI.build/sources"
+    },
+    "/Users/alex/Developer/roblox-account-manager/RobloxMultiCLI/.build/arm64-apple-macosx/release/robloxmulti.product/Objects.LinkFileList" : {
+      "alwaysOutOfDate" : false,
+      "inputs" : [
+        {
+          "kind" : "virtual",
+          "name" : "<link-file-list>"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/alex/Developer/roblox-account-manager/RobloxMultiCLI/.build/arm64-apple-macosx/release/RobloxMultiCLI.build/main.swift.o"
+        }
+      ],
+      "outputFilePath" : "/Users/alex/Developer/roblox-account-manager/RobloxMultiCLI/.build/arm64-apple-macosx/release/robloxmulti.product/Objects.LinkFileList"
+    },
+    "/Users/alex/Developer/roblox-account-manager/RobloxMultiCLI/.build/arm64-apple-macosx/release/swift-version--58304C5D6DBC2206.txt" : {
+      "alwaysOutOfDate" : true,
+      "inputs" : [
+        {
+          "kind" : "virtual",
+          "name" : "<swift-get-version>"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc"
+        }
+      ],
+      "outputFilePath" : "/Users/alex/Developer/roblox-account-manager/RobloxMultiCLI/.build/arm64-apple-macosx/release/swift-version--58304C5D6DBC2206.txt"
+    }
+  }
+}

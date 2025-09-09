@@ -1,0 +1,66 @@
+client:
+  name: basic
+  file-system: device-agnostic
+tools: {}
+targets:
+  "PackageStructure": ["<PackageStructure>"]
+  "RobloxMultiCLI-arm64-apple-macosx15.0-release.module": ["<RobloxMultiCLI-arm64-apple-macosx15.0-release.module>"]
+  "main": ["<RobloxMultiCLI-arm64-apple-macosx15.0-release.module>","<robloxmulti-arm64-apple-macosx15.0-release.exe>"]
+  "robloxmulti-arm64-apple-macosx15.0-release.exe": ["<robloxmulti-arm64-apple-macosx15.0-release.exe>"]
+  "test": ["<RobloxMultiCLI-arm64-apple-macosx15.0-release.module>","<robloxmulti-arm64-apple-macosx15.0-release.exe>"]
+default: "main"
+nodes:
+  "/Users/alex/Developer/roblox-account-manager/RobloxMultiCLI/Sources/RobloxMultiCLI/":
+    is-directory-structure: true
+    content-exclusion-patterns: [".git",".build"]
+commands:
+  "/Users/alex/Developer/roblox-account-manager/RobloxMultiCLI/.build/arm64-apple-macosx/release/RobloxMultiCLI.build/sources":
+    tool: write-auxiliary-file
+    inputs: ["<sources-file-list>","/Users/alex/Developer/roblox-account-manager/RobloxMultiCLI/Sources/RobloxMultiCLI/main.swift"]
+    outputs: ["/Users/alex/Developer/roblox-account-manager/RobloxMultiCLI/.build/arm64-apple-macosx/release/RobloxMultiCLI.build/sources"]
+    description: "Write auxiliary file /Users/alex/Developer/roblox-account-manager/RobloxMultiCLI/.build/arm64-apple-macosx/release/RobloxMultiCLI.build/sources"
+
+  "/Users/alex/Developer/roblox-account-manager/RobloxMultiCLI/.build/arm64-apple-macosx/release/robloxmulti.product/Objects.LinkFileList":
+    tool: write-auxiliary-file
+    inputs: ["<link-file-list>","/Users/alex/Developer/roblox-account-manager/RobloxMultiCLI/.build/arm64-apple-macosx/release/RobloxMultiCLI.build/main.swift.o"]
+    outputs: ["/Users/alex/Developer/roblox-account-manager/RobloxMultiCLI/.build/arm64-apple-macosx/release/robloxmulti.product/Objects.LinkFileList"]
+    description: "Write auxiliary file /Users/alex/Developer/roblox-account-manager/RobloxMultiCLI/.build/arm64-apple-macosx/release/robloxmulti.product/Objects.LinkFileList"
+
+  "/Users/alex/Developer/roblox-account-manager/RobloxMultiCLI/.build/arm64-apple-macosx/release/swift-version--58304C5D6DBC2206.txt":
+    tool: write-auxiliary-file
+    inputs: ["<swift-get-version>","/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc"]
+    outputs: ["/Users/alex/Developer/roblox-account-manager/RobloxMultiCLI/.build/arm64-apple-macosx/release/swift-version--58304C5D6DBC2206.txt"]
+    always-out-of-date: "true"
+    description: "Write auxiliary file /Users/alex/Developer/roblox-account-manager/RobloxMultiCLI/.build/arm64-apple-macosx/release/swift-version--58304C5D6DBC2206.txt"
+
+  "<RobloxMultiCLI-arm64-apple-macosx15.0-release.module>":
+    tool: phony
+    inputs: ["/Users/alex/Developer/roblox-account-manager/RobloxMultiCLI/.build/arm64-apple-macosx/release/RobloxMultiCLI.build/main.swift.o","/Users/alex/Developer/roblox-account-manager/RobloxMultiCLI/.build/arm64-apple-macosx/release/Modules/RobloxMultiCLI.swiftmodule"]
+    outputs: ["<RobloxMultiCLI-arm64-apple-macosx15.0-release.module>"]
+
+  "<robloxmulti-arm64-apple-macosx15.0-release.exe>":
+    tool: phony
+    inputs: ["/Users/alex/Developer/roblox-account-manager/RobloxMultiCLI/.build/arm64-apple-macosx/release/robloxmulti"]
+    outputs: ["<robloxmulti-arm64-apple-macosx15.0-release.exe>"]
+
+  "C.RobloxMultiCLI-arm64-apple-macosx15.0-release.module":
+    tool: shell
+    inputs: ["/Users/alex/Developer/roblox-account-manager/RobloxMultiCLI/Sources/RobloxMultiCLI/main.swift","/Users/alex/Developer/roblox-account-manager/RobloxMultiCLI/.build/arm64-apple-macosx/release/swift-version--58304C5D6DBC2206.txt","/Users/alex/Developer/roblox-account-manager/RobloxMultiCLI/.build/arm64-apple-macosx/release/RobloxMultiCLI.build/sources"]
+    outputs: ["/Users/alex/Developer/roblox-account-manager/RobloxMultiCLI/.build/arm64-apple-macosx/release/RobloxMultiCLI.build/main.swift.o","/Users/alex/Developer/roblox-account-manager/RobloxMultiCLI/.build/arm64-apple-macosx/release/Modules/RobloxMultiCLI.swiftmodule"]
+    description: "Compiling Swift Module 'RobloxMultiCLI' (1 sources)"
+    args: ["/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc","-module-name","RobloxMultiCLI","-emit-dependencies","-emit-module","-emit-module-path","/Users/alex/Developer/roblox-account-manager/RobloxMultiCLI/.build/arm64-apple-macosx/release/Modules/RobloxMultiCLI.swiftmodule","-output-file-map","/Users/alex/Developer/roblox-account-manager/RobloxMultiCLI/.build/arm64-apple-macosx/release/RobloxMultiCLI.build/output-file-map.json","-whole-module-optimization","-num-threads","10","-c","@/Users/alex/Developer/roblox-account-manager/RobloxMultiCLI/.build/arm64-apple-macosx/release/RobloxMultiCLI.build/sources","-I","/Users/alex/Developer/roblox-account-manager/RobloxMultiCLI/.build/arm64-apple-macosx/release/Modules","-target","arm64-apple-macosx13.0","-O","-j10","-DSWIFT_PACKAGE","-module-cache-path","/Users/alex/Developer/roblox-account-manager/RobloxMultiCLI/.build/arm64-apple-macosx/release/ModuleCache","-parseable-output","-Xfrontend","-entry-point-function-name","-Xfrontend","RobloxMultiCLI_main","-swift-version","5","-sdk","/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.5.sdk","-F","/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks","-F","/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/PrivateFrameworks","-I","/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib","-L","/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib","-g","-Xcc","-isysroot","-Xcc","/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.5.sdk","-Xcc","-F","-Xcc","/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks","-Xcc","-F","-Xcc","/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/PrivateFrameworks","-Xcc","-fPIC","-Xcc","-g","-package-name","robloxmulticli"]
+
+  "C.robloxmulti-arm64-apple-macosx15.0-release.exe":
+    tool: shell
+    inputs: ["/Users/alex/Developer/roblox-account-manager/RobloxMultiCLI/.build/arm64-apple-macosx/release/RobloxMultiCLI.build/main.swift.o","/Users/alex/Developer/roblox-account-manager/RobloxMultiCLI/.build/arm64-apple-macosx/release/robloxmulti.product/Objects.LinkFileList"]
+    outputs: ["/Users/alex/Developer/roblox-account-manager/RobloxMultiCLI/.build/arm64-apple-macosx/release/robloxmulti"]
+    description: "Linking ./.build/arm64-apple-macosx/release/robloxmulti"
+    args: ["/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc","-L","/Users/alex/Developer/roblox-account-manager/RobloxMultiCLI/.build/arm64-apple-macosx/release","-o","/Users/alex/Developer/roblox-account-manager/RobloxMultiCLI/.build/arm64-apple-macosx/release/robloxmulti","-module-name","robloxmulti","-Xlinker","-no_warn_duplicate_libraries","-emit-executable","-Xlinker","-dead_strip","-Xlinker","-alias","-Xlinker","_RobloxMultiCLI_main","-Xlinker","_main","-Xlinker","-rpath","-Xlinker","@loader_path","@/Users/alex/Developer/roblox-account-manager/RobloxMultiCLI/.build/arm64-apple-macosx/release/robloxmulti.product/Objects.LinkFileList","-target","arm64-apple-macosx13.0","-sdk","/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.5.sdk","-F","/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks","-F","/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/PrivateFrameworks","-I","/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib","-L","/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib","-g"]
+
+  "PackageStructure":
+    tool: package-structure-tool
+    inputs: ["/Users/alex/Developer/roblox-account-manager/RobloxMultiCLI/Sources/RobloxMultiCLI/","/Users/alex/Developer/roblox-account-manager/RobloxMultiCLI/Package.swift","/Users/alex/Developer/roblox-account-manager/RobloxMultiCLI/Package.resolved"]
+    outputs: ["<PackageStructure>"]
+    description: "Planning build"
+    allow-missing-inputs: true
+
